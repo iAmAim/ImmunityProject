@@ -8,6 +8,7 @@ public class CameraController : MonoBehaviour {
     CameraSettings camerasettings;
     float cameraRotationX = 0f;
 
+
 	// Use this for initialization
 	void Start () {
 
@@ -48,8 +49,11 @@ public class CameraController : MonoBehaviour {
             //clamp, set cameraPitch min -45 max 45 degs
             cameraRotationX = Mathf.Clamp(cameraRotationX, -camerasettings.cameraPitchMax, camerasettings.cameraPitchMax);
 
+
             //Apply rotation to Camera
             Camera.main.transform.Rotate(cameraRotationX, 0f, 0f);
+
+           
         }
        
 	}
