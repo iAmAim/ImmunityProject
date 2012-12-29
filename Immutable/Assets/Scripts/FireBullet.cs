@@ -28,7 +28,8 @@ public class FireBullet : MonoBehaviour {
 	void Start () {
 
         myTransform = transform;
-        cameraHeadTransform = myTransform.FindChild("Main Camera"); 
+        cameraHeadTransform = myTransform.FindChild("Main Camera");
+      
 	}
 	
 	// Update is called once per frame
@@ -37,10 +38,11 @@ public class FireBullet : MonoBehaviour {
         // check if time is greater than nextfire
         if(Input.GetButton("Fire Weapon") && Time.time > nextFire)
         {
-            
-            nextFire = Time.time + fireRate;
-            launchPosition = cameraHeadTransform.TransformPoint(0,-1,5);
+         
 
+            nextFire = Time.time + fireRate;
+            launchPosition = cameraHeadTransform.TransformPoint(0, 0, 5); 
+             
             //create bullet projectile at launchPosition and tilt the angle  
             // so that it is horizontal using the angle  eulerAngles.x + 90
 

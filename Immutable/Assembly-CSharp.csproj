@@ -47,18 +47,10 @@
      <Compile Include="Assets\Scripts\BulletScript.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\CameraSettings.cs" />
+     <Compile Include="Assets\Scripts\Crosshair.cs" />
      <Compile Include="Assets\Scripts\FireBullet.cs" />
      <Compile Include="Assets\Scripts\Unit.cs" />
      <Compile Include="Assets\Scripts\UnitPlayer.cs" />
-     <None Include="Assets\Standard Assets\Blob-Shadow\ShadowProjection.shader" />
-     <None Include="Assets\Standard Assets\Water\Sources\FX-Water Simple.shader" />
-     <None Include="Assets\Standard Assets\Gem Rendering\diamond shader.shader" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{63833B92-BE6E-D566-820D-0B8EC547C7B3}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
-    <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
-      <Project>{EC365CD2-78FC-EFAE-E7D3-6A8CBAA97C1B}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
